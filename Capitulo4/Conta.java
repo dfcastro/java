@@ -6,7 +6,7 @@ public class Conta
     int numero;
     String agencia;
     double saldo;
-    String dataDeAbertura;
+    Data dataDeAbertura;
 
     public boolean saca(double saque)
     {
@@ -35,4 +35,15 @@ public class Conta
         System.out.println(agencia);
     }
 
+    String recuperaDadosParaImpressao()
+    {
+        String dados = "\nTItular: " + this.titular;
+        //imprimir aqui os outros atributos..
+
+        dados += "\nDia: " + this.dataDeAbertura.dia;
+        dados += "\nMes: " + this.dataDeAbertura.mes;
+        dados + "\nAno:" . this.dataDeAbertura.ano;
+
+        return dados;
+    }
 }
