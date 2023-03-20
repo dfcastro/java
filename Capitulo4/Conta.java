@@ -30,19 +30,13 @@ public class Conta
         return this.saldo*0.1;
     }
 
-    public void recuperaDadosParaImpressao()
-    {
-        System.out.println(agencia);
-    }
 
     String recuperaDadosParaImpressao()
     {
         String dados = "\nTItular: " + this.titular;
         //imprimir aqui os outros atributos..
 
-        dados += "\nDia: " + this.dataDeAbertura.dia;
-        dados += "\nMes: " + this.dataDeAbertura.mes;
-        dados + "\nAno:" . this.dataDeAbertura.ano;
+        dados += "\n Data de abertura: " + this.dataDeAbertura.formataData(01, 12, 1992);
 
         return dados;
     }
