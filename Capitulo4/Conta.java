@@ -2,11 +2,36 @@ package Capitulo4;
 
 public class Conta 
 {
-    String titular;
-    int numero;
-    String agencia;
-    double saldo;
-    Data dataDeAbertura;
+    private String titular;
+    private int numero;
+    private String agencia;
+    private double saldo;
+    private Data dataDeAbertura;
+
+
+    Conta(String titular)
+    {
+        this.titular = titular;
+    }
+    public String getTitular()
+    {
+        return this.titular;
+    }
+
+    public void setTitular(String novoTitular)
+    {
+        this.titular = novoTitular;
+    }
+
+    public int getNumero()
+    {
+        return this.numero;
+    }
+
+    public String getAgencia()
+    {
+        return this.agencia;
+    }
 
     public boolean saca(double saque)
     {
